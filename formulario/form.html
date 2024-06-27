@@ -47,13 +47,13 @@
             <br>
             <div class="inputBox">
                 <label for="cnpj">5. CNPJ do empregador:</label><br>
-                <input type="text" id="cpfUsr" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" required>
+                <input type="number" id="cpfUsr" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" required>
             </div>
             <br>
             <br>
             <div class="inputBox">
                 <label for="identificação">6. Telefone do empregador:</label><br>
-                <input type="telf" id="telfUsr" name="telefone" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}" placeholder="(00) 000000000" required>
+                <input  type="number" id="telfUsr" name="telefone" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}" placeholder="(00) 000000000" required>
             </div>
             <br>
             <br>
@@ -72,5 +72,17 @@
             <button type="submit">Enviar</button>
         </fieldset>
     </div>
+    <style>
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+    </style>
 </body>
 </html>
