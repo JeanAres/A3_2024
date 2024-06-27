@@ -2,7 +2,9 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <meta name="description" content="blablabla">
+    <meta name="author" content="Jean Soares,Gustavo Cesarinone Leonardo moretto">
+    <title>Projeto 2</title>
 </head>
 <body>
     <div class="box">
@@ -18,54 +20,54 @@
             <br>
             <div class="input">
                 <label for="tipoAtendimento">2. Tipo de Atendimento</label><br>
-                <input type="radio" id="Presencial" name="type" value="Presencial"> Presencial<br>
-                <input type="radio" id="Whatsapp" name="type" value="Whatsapp"> Whatsapp<br>
-                <input type="radio" id="LigacaoTelefonica" name="type" value="Ligação telefonica"> Ligação telefonica<br>
-                <input type="radio" id="Email" name="type" value="E-mail"> E-mail<br>
-                <input type="radio" id="RedesSociais" name="type" value="Redes Sociais"> Redes Sociais<br>
-                <input type="radio" id="Teams" name="type" value="Teams"> Teams<br>
-                <input type="radio" id="Outras" name="type" value="Outra"> Outra<br>
+                <input type="radio" id="presencial" name="type" value="Presencial"> Presencial<br>
+                <input type="radio" id="whatsapp" name="type" value="Whatsapp"> Whatsapp<br>
+                <input type="radio" id="ligacaoTelefonica" name="type" value="Ligação telefonica"> Ligação telefonica<br>
+                <input type="radio" id="email" name="type" value="E-mail"> E-mail<br>
+                <input type="radio" id="redesSociais" name="type" value="Redes Sociais"> Redes Sociais<br>
+                <input type="radio" id="Tteams" name="type" value="Teams"> Teams<br>
+                <input type="radio" id="outras" name="type" value="Outra"> Outra<br>
             </div>
             <br>
             <div class="input">
                 <label for="tipoAtendimento">3. Quem estou atendendo:</label><br>
-                <input type="radio" id="Empregador" name="typeClient" value="Empregador" required> Empregador<br>
-                <input type="radio" id="Trabalhador" name="typeClient" value="Trabalhador" required> Trabalhador<br>
-                <input type="radio" id="OutrasAgencias" name="typeClient" value="Outras Agências" required> Outras agências<br>
+                <input type="radio" id="empregador" name="typeClient" value="Empregador" required> Empregador<br>
+                <input type="radio" id="trabalhador" name="typeClient" value="Trabalhador" required> Trabalhador<br>
+                <input type="radio" id="outrasAgencias" name="typeClient" value="Outras Agências" required> Outras agências<br>
                 <input type="radio" id="ads" name="typeClient" value="ADS" required> ADS<br>
-                <input type="radio" id="SetoresDaFGTAS" name="typeClient" value="Setores da FGTAS" required> Setores da FGTAS<br>
-                <input type="radio" id="InfoMercado" name="typeClient" value="Mercado de trabalho" required> Interessado de informações sobre o Mercado de Trabalho<br>
-                <input type="radio" id="Outrass" name="typeClient" value="Outra" required> Outra<br>
+                <input type="radio" id="setoresDaFGTAS" name="typeClient" value="Setores da FGTAS" required> Setores da FGTAS<br>
+                <input type="radio" id="infoMercado" name="typeClient" value="Mercado de trabalho" required> Interessado de informações sobre o Mercado de Trabalho<br>
+                <input type="radio" id="outrass" name="typeClient" value="Outra" required> Outra<br>
             </div>
             <br>
             <br>
             <div class="inputBox">
                 <label for="identificação">4. Nome do empregador:</label><br>
-                <input type="text" name="nome" id="nomeUsr" placeholder="Escreva aqui..." required>
+                <input type="text" name="nome" id="nomeUser" placeholder="Escreva aqui..." required>
             </div>
             <br>
             <br>
             <div class="inputBox">
                 <label for="cnpj">5. CNPJ do empregador:</label><br>
-                <input type="number" id="cpfUsr" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" required>
+                <input type="number" id="cpfUser" name="CNPJ" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" required>
             </div>
             <br>
             <br>
             <div class="inputBox">
                 <label for="identificação">6. Telefone do empregador:</label><br>
-                <input  type="number" id="telfUsr" name="telefone" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}" placeholder="(00) 000000000" required>
+                <input  type="number" id="telfUser" name="telefone" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}" placeholder="(00) 000000000" required>
             </div>
             <br>
             <br>
             <div class="input">
                 <label for="tipoAtendimento">7. Tipo de atendimento:</label><br>
-                <input type="radio" id="CarteiraTrabalho" name="typeClient" value="Carteira de Trabalho, SD, Vagas" required> Carteira de Trabalho, SD, Vagas<br>
-                <input type="radio" id="ProgramaGaucho" name="typeClient" value="Programa Gaúcho do Artesanato" required> Programa Gaúcho do Artesanato<br>
-                <input type="radio" id="VidaCentroHu" name="typeClient" value="Vida Centro Humanístico" required> Vida Centro Humanístico<br>
-                <input type="radio" id="Empreendorismo" name="typeClient" value="Orientações sobre o empreendedorismo" required> Orientações sobre o empreendedorismo<br>
-                <input type="radio" id="CursosDeQualificaçao" name="typeClient" value="Orientações sobre cursos de qualificação" required> Orientações sobre cursos de qualificação<br>
-                <input type="radio" id="InfoMercados" name="typeClient" value="Informações sobre o mercado de trabalho" required> Informações sobre o mercado de trabalho<br>
-                <input type="radio" id="Outrasss" name="typeClient" value="Outra" required> Outra<br>
+                <input type="radio" id="carteiraTrabalho" name="typeClient" value="Carteira de Trabalho, SD, Vagas" required> Carteira de Trabalho, SD, Vagas<br>
+                <input type="radio" id="programaGaucho" name="typeClient" value="Programa Gaúcho do Artesanato" required> Programa Gaúcho do Artesanato<br>
+                <input type="radio" id="vidaCentroHu" name="typeClient" value="Vida Centro Humanístico" required> Vida Centro Humanístico<br>
+                <input type="radio" id="empreendorismo" name="typeClient" value="Orientações sobre o empreendedorismo" required> Orientações sobre o empreendedorismo<br>
+                <input type="radio" id="cursosDeQualificaçao" name="typeClient" value="Orientações sobre cursos de qualificação" required> Orientações sobre cursos de qualificação<br>
+                <input type="radio" id="infoMercados" name="typeClient" value="Informações sobre o mercado de trabalho" required> Informações sobre o mercado de trabalho<br>
+                <input type="radio" id="outrasss" name="typeClient" value="Outra" required> Outra<br>
             </div>
             <br>
             <br>
