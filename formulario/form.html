@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="blablabla">
     <meta name="author" content="Jean Soares,Gustavo Cesarinone Leonardo moretto">
     <title>Projeto 2</title>
 </head>
+
 <body>
     <div class="box">
         <fieldset>
-            <legend><b>Bloco 1 - Identificação</b></legend>
+            <legend class="letras"><b>Bloco 1 - Identificação</b></legend>
             <br>
             <div class="inputBox">
-                <label for="identificação">1. Identificação do atendente:</label><br>
+                <label for="identificação" class="letras">1. Identificação do atendente:</label><br>
                 <input type="text" name="ident" id="idUsuario" placeholder="Escreva aqui..." required>
             </div>
             <br>
             <br>
             <br>
-            <div class="input">
-                <label for="tipoAtendimento">2. Tipo de Atendimento</label><br>
+            <div class="input" class="letras">
+                <label for="tipoAtendimento" class="letras">2. Tipo de Atendimento:</label><br>
                 <input type="radio" id="presencial" name="type" value="Presencial"> Presencial<br>
                 <input type="radio" id="whatsapp" name="type" value="Whatsapp"> Whatsapp<br>
-                <input type="radio" id="ligacaoTelefonica" name="type" value="Ligação telefonica"> Ligação telefonica<br>
+                <input type="radio" id="ligacaoTelefonica" name="type" value="Ligação telefonica"> Ligação
+                telefonica<br>
                 <input type="radio" id="email" name="type" value="E-mail"> E-mail<br>
                 <input type="radio" id="redesSociais" name="type" value="Redes Sociais"> Redes Sociais<br>
                 <input type="radio" id="Tteams" name="type" value="Teams"> Teams<br>
@@ -30,43 +33,55 @@
             </div>
             <br>
             <div class="input">
-                <label for="tipoAtendimento">3. Quem estou atendendo:</label><br>
+                <label for="tipoAtendimento" class="letras">3. Quem estou atendendo:</label><br>
                 <input type="radio" id="empregador" name="typeClient" value="Empregador" required> Empregador<br>
                 <input type="radio" id="trabalhador" name="typeClient" value="Trabalhador" required> Trabalhador<br>
-                <input type="radio" id="outrasAgencias" name="typeClient" value="Outras Agências" required> Outras agências<br>
+                <input type="radio" id="outrasAgencias" name="typeClient" value="Outras Agências" required> Outras
+                agências<br>
                 <input type="radio" id="ads" name="typeClient" value="ADS" required> ADS<br>
-                <input type="radio" id="setoresDaFGTAS" name="typeClient" value="Setores da FGTAS" required> Setores da FGTAS<br>
-                <input type="radio" id="infoMercado" name="typeClient" value="Mercado de trabalho" required> Interessado de informações sobre o Mercado de Trabalho<br>
+                <input type="radio" id="setoresDaFGTAS" name="typeClient" value="Setores da FGTAS" required> Setores da
+                FGTAS<br>
+                <input type="radio" id="infoMercado" name="typeClient" value="Mercado de trabalho" required> Interessado
+                de informações sobre o Mercado de Trabalho<br>
                 <input type="radio" id="outrass" name="typeClient" value="Outra" required> Outra<br>
             </div>
             <br>
             <br>
             <div class="inputBox">
-                <label for="identificação">4. Nome do empregador:</label><br>
+                <label for="identificação" class="letras">4. Nome do empregador:</label><br>
                 <input type="text" name="nome" id="nomeUser" placeholder="Escreva aqui..." required>
             </div>
             <br>
             <br>
             <div class="inputBox">
-                <label for="cnpj">5. CNPJ do empregador:</label><br>
-                <input type="number" id="cpfUser" name="CNPJ" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" maxlength="18" placeholder="000.000.000-00" required>
+                <label for="cnpj" class="letras">5. CNPJ do empregador:</label><br>
+                <input type="number" id="cpfUser" name="CNPJ" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" maxlength="18"
+                    placeholder="000.000.000-00" required>
             </div>
             <br>
             <br>
             <div class="inputBox">
-                <label for="identificação">6. Telefone do empregador:</label><br>
-                <input  type="number" id="telfUser" name="telefone" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}" maxlength="11" placeholder="(00) 000000000" required>
+                <label for="identificação" class="letras">6. Telefone do empregador:</label><br>
+                <input type="number" id="telfUser" name="telefone" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}"
+                    maxlength="11" placeholder="(00) 000000000" required>
             </div>
             <br>
             <br>
             <div class="input">
-                <label for="tipoAtendimento">7. Tipo de atendimento:</label><br>
-                <input type="radio" id="carteiraTrabalho" name="typeClient" value="Carteira de Trabalho, SD, Vagas" required> Carteira de Trabalho, SD, Vagas<br>
-                <input type="radio" id="programaGaucho" name="typeClient" value="Programa Gaúcho do Artesanato" required> Programa Gaúcho do Artesanato<br>
-                <input type="radio" id="vidaCentroHu" name="typeClient" value="Vida Centro Humanístico" required> Vida Centro Humanístico<br>
-                <input type="radio" id="empreendorismo" name="typeClient" value="Orientações sobre o empreendedorismo" required> Orientações sobre o empreendedorismo<br>
-                <input type="radio" id="cursosDeQualificaçao" name="typeClient" value="Orientações sobre cursos de qualificação" required> Orientações sobre cursos de qualificação<br>
-                <input type="radio" id="infoMercados" name="typeClient" value="Informações sobre o mercado de trabalho" required> Informações sobre o mercado de trabalho<br>
+                <label for="tipoAtendimento" class="letras">7. Tipo de atendimento:</label><br>
+                <input type="radio" id="carteiraTrabalho" name="typeClient" value="Carteira de Trabalho, SD, Vagas"
+                    required> Carteira de Trabalho, SD, Vagas<br>
+                <input type="radio" id="programaGaucho" name="typeClient" value="Programa Gaúcho do Artesanato"
+                    required> Programa Gaúcho do Artesanato<br>
+                <input type="radio" id="vidaCentroHu" name="typeClient" value="Vida Centro Humanístico" required> Vida
+                Centro Humanístico<br>
+                <input type="radio" id="empreendorismo" name="typeClient" value="Orientações sobre o empreendedorismo"
+                    required> Orientações sobre o empreendedorismo<br>
+                <input type="radio" id="cursosDeQualificaçao" name="typeClient"
+                    value="Orientações sobre cursos de qualificação" required> Orientações sobre cursos de
+                qualificação<br>
+                <input type="radio" id="infoMercados" name="typeClient" value="Informações sobre o mercado de trabalho"
+                    required> Informações sobre o mercado de trabalho<br>
                 <input type="radio" id="outrasss" name="typeClient" value="Outra" required> Outra<br>
             </div>
             <br>
@@ -75,16 +90,63 @@
         </fieldset>
     </div>
     <style>
+        body {
+            background-color: #1e1f20;
+        }
+
+        .box {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: rgb(20, 19, 19);
+        }
+
+        .inputBox {
+            margin-bottom: 20px;
+        }
+
+        .inputBox label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .inputBox input[type="text"],
+        .inputBox input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .input input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        legend {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .letras {
+            color: #59c225;
+        }
+
+        .input {
+            color: #59c225;
+            accent-color: #1a79d7;
+        }
+
         input::-webkit-outer-spin-button,
         input::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-  }
+            -webkit-appearance: none;
+            margin: 0;
+        }
 
         input[type=number] {
-        -moz-appearance: textfield;
-  }
+            -moz-appearance: textfield;
+        }
     </style>
 </body>
 </html>
-
