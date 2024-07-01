@@ -65,3 +65,8 @@ input[type=number] {
     width: 100px;
     margin: 0 auto;
 }
+
+div{
+    color: #59c225;
+    accent-color: #1a79d7;
+}
