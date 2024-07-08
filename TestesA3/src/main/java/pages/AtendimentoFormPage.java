@@ -5,12 +5,15 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
 public class AtendimentoFormPage extends BasePage{
+
     @FindBy(id = "idUsuario")
     private WebElement txIdUsuario;
     @FindBy(id = "botaoIniciar")
     private WebElement btIniciar;
-    @FindBy(id = "categoria")
-    private WebElement selCategoriaProduto;
+    @FindBy(id = "cnpjUser")
+    private WebElement txCnpjUser;
+
+    /*Para consultar
     @FindBy(id = "venda")
     private WebElement selCanalVenda;
     @FindBy(id = "txt02")
@@ -35,26 +38,40 @@ public class AtendimentoFormPage extends BasePage{
     private WebElement linkGoogle;
     @FindBy(partialLinkText = "GZH")
     private WebElement linkZh;
+     */
+
     public AtendimentoFormPage(WebDriver driver) {
         super(driver);
     }
 
-    public AtendimentoFormPage clicarTxIdUsuario(String texto) {
+    public String getTxIdUsuario(){
+        return txIdUsuario.getAttribute("value");
+    }
 
+    public AtendimentoFormPage preencherTxIdUsuario(String texto) {
         txIdUsuario.sendKeys(texto);
         return this;
-
     }
+    public String getTxCnpjUser(){
+        return txCnpjUser.getAttribute("value");
+    }
+
+    public AtendimentoFormPage preencherTxCnpjUser(String texto) {
+        txCnpjUser.sendKeys(texto);
+        return this;
+    }
+
+
     public AtendimentoFormPage clicarBotaoIniciar(){
         btIniciar.click();
         return this;
     }
 
-    public String clicarGoogle() {
+    /*public String clicarGoogle() {
         linkGoogle.click();
         String url = driver.getCurrentUrl();
         driver.navigate().back();
         return url;
 
-    }
+    }*/
 }
