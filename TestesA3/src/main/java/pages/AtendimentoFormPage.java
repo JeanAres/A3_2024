@@ -5,7 +5,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
 public class AtendimentoFormPage extends BasePage{
-
     @FindBy(id = "idUsuario")
     private WebElement txIdUsuario;
     @FindBy(id = "botaoIniciar")
@@ -13,7 +12,7 @@ public class AtendimentoFormPage extends BasePage{
     @FindBy(id = "cnpjUser")
     private WebElement txCnpjUser;
 
-    /*Para consultar
+    /* Para consultar
     @FindBy(id = "venda")
     private WebElement selCanalVenda;
     @FindBy(id = "txt02")
@@ -38,8 +37,7 @@ public class AtendimentoFormPage extends BasePage{
     private WebElement linkGoogle;
     @FindBy(partialLinkText = "GZH")
     private WebElement linkZh;
-     */
-
+ */
     public AtendimentoFormPage(WebDriver driver) {
         super(driver);
     }
@@ -72,6 +70,5 @@ public class AtendimentoFormPage extends BasePage{
         String url = driver.getCurrentUrl();
         driver.navigate().back();
         return url;
-
     }*/
 }
