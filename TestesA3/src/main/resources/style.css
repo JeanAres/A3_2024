@@ -1,0 +1,124 @@
+body {
+    background-color: #1e1f20;
+}
+
+.box {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(20, 19, 19);
+}
+
+.inputBox {
+    margin-bottom: 20px;
+}
+
+.inputBox label {
+    display: block;
+    font-weight: bold;
+}
+
+.inputBox input[type="text"],
+.inputBox input[type="number"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input input[type="radio"] {
+    margin-right: 10px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.letras {
+    color: #59c225;
+}
+
+.input {
+    color: #59c225;
+    accent-color: #1a79d7;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.botoes{
+    background-color: #454345;
+    color: #59c225;
+    cursor: pointer;
+}
+
+.botoes:hover {
+    background-color: #383738;
+}
+
+#botao{
+    width: 100px;
+    margin: 0 auto;
+}
+
+div{
+    color: #59c225;
+    accent-color: #1a79d7;
+}
+
+.video-container {
+    margin: 0px auto;
+    width: 503%;
+    max-width: 530px;
+    position: relative;
+    padding-bottom: 40%;
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.box1 {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(20, 19, 19);
+}
+
+#botaoIniciar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botaozao {
+    background-color: #59c225;
+    color: #454345;
+    font-size: 1em; 
+    padding: 20px 40px; 
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.botaozao:hover {
+    background-color: #45a017;
+}
