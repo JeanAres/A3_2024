@@ -8,11 +8,10 @@ public class AtendimentoFormTestID02 extends BaseTest {
     public void validarId02() {
         AtendimentoFormPage page = new AtendimentoFormPage(getDriver());
         page.clicarBotaoIniciar();
-        AtendimentoFormPage formPage = new AtendimentoFormPage(driver);
         String caracteres = "ABCEDFGHIJKLMNOPQRSTUVWXYZ".repeat(1);
-        formPage.preencherTxCnpjUser(caracteres);  // Digitar letras no campo CNPJ do empregador
+        page.preencherTxCnpjCliente(caracteres);  // Digitar letras no campo CNPJ do empregador
 
-        String valorCNPJ = formPage.getTxCnpjUser();
+        String valorCNPJ = page.getTxCnpjCliente();
         Assert.assertEquals(0, valorCNPJ.length()); // Verificar pq o E nao tem valor?
     }
 

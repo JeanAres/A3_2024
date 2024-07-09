@@ -21,6 +21,7 @@ public class BaseTest {
         driver = new EdgeDriver();
         driver.get(url);
         driver.manage().window().maximize();
+
     }
 
     protected WebDriver getDriver() {

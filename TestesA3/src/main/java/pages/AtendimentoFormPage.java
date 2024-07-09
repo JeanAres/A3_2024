@@ -4,13 +4,34 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
+import java.util.List;
+
 public class AtendimentoFormPage extends BasePage{
-    @FindBy(id = "idUsuario")
-    private WebElement txIdUsuario;
-    @FindBy(id = "botaoIniciar")
+    @FindBy(id = "idAtendente")
+    private WebElement txIdAtendente;
+    @FindBy(id = "btnIniciar")
     private WebElement btIniciar;
-    @FindBy(id = "cnpjUser")
-    private WebElement txCnpjUser;
+    @FindBy(id = "idNomeCliente")
+    private WebElement txNomeCliente;
+    @FindBy(id = "idTelefoneCliente")
+    private WebElement txTelefoneCliente;
+    @FindBy(id = "idCnpjCliente")
+    private WebElement txCnpjCliente;
+    @FindBy(id = "btnEnviar")
+    private WebElement btEnviar;
+    @FindBy(id = "idDadosEnviados")
+    private WebElement strDadosEnviados;
+
+
+
+    @FindBy(name = "type")
+    private List<WebElement> listaRdTipoAtendimento;
+    @FindBy(name = "typeClient")
+    private List<WebElement> listaRdQuemEstouAtendendo;
+    @FindBy(name = "type2")
+    private List<WebElement> listaRdTipoAtendimento2;
+
+
 
     /* Para consultar
     @FindBy(id = "venda")
@@ -42,29 +63,65 @@ public class AtendimentoFormPage extends BasePage{
         super(driver);
     }
 
-    public String getTxIdUsuario(){
-        return txIdUsuario.getAttribute("value");
-    }
-
-    public AtendimentoFormPage preencherTxIdUsuario(String texto) {
-        txIdUsuario.sendKeys(texto);
-        return this;
-    }
-    public String getTxCnpjUser(){
-        return txCnpjUser.getAttribute("value");
-    }
-
-    public AtendimentoFormPage preencherTxCnpjUser(String texto) {
-        txCnpjUser.sendKeys(texto);
-        return this;
-    }
-
-
     public AtendimentoFormPage clicarBotaoIniciar(){
         btIniciar.click();
         return this;
     }
 
+    public String getTxIdAtendente(){
+        return txIdAtendente.getAttribute("value");
+    }
+
+    public AtendimentoFormPage preencherTxIdAtendente(String texto) {
+        txIdAtendente.sendKeys(texto);
+        return this;
+    }
+
+    public String getTxNomeCliente(){
+        return txNomeCliente.getAttribute("value");
+    }
+
+    public AtendimentoFormPage preencherTxNomeCliente(String texto) {
+        txNomeCliente.sendKeys(texto);
+        return this;
+    }
+
+
+    public String getTxCnpjCliente(){
+        return txCnpjCliente.getAttribute("value");
+    }
+
+    public AtendimentoFormPage preencherTxCnpjCliente(String texto) {
+        txCnpjCliente.sendKeys(texto);
+        return this;
+    }
+    public String getTxTelfoneCliente(){
+        return txTelefoneCliente.getAttribute("value");
+    }
+
+    public AtendimentoFormPage preencherTxTelefoneCliente(String texto) {
+        txTelefoneCliente.sendKeys(texto);
+        return this;
+    }
+
+    public String getStrDadosEnvidados(){
+        return strDadosEnviados.getText();
+    }
+
+    public List<WebElement> getListaRdTipoAtendimento(){
+        return listaRdTipoAtendimento;
+    }
+    public List<WebElement> getListaRdTipoAtendimento2(){
+        return listaRdTipoAtendimento2;
+    }
+    public List<WebElement> getListaRdQuemEstouAtendendo(){
+        return listaRdQuemEstouAtendendo;
+    }
+
+    public AtendimentoFormPage clicarBotaoEnviar(){
+        btEnviar.click();
+        return this;
+    }
     /*public String clicarGoogle() {
         linkGoogle.click();
         String url = driver.getCurrentUrl();

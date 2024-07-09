@@ -15,91 +15,91 @@
             <legend class="letras"><b>Bloco 1 - Identificação</b></legend>
             <br>
             <div class="inputBox">
-                <label for="identificação" class="letras">1. Identificação do atendente:</label><br>
-                <input type="text" name="ident" id="idUsuario" placeholder="Escreva aqui..." required>
+                <label>1. Identificação do atendente:</label><br>
+                <input type="text" name="ident" id="idAtendente" placeholder="Escreva aqui..." required>
             </div>
             <br>
             <div class="input" class="letras">
-                <label for="tipoAtendimento" class="letras">2. Tipo de Atendimento:</label><br>
-                <input type="radio" id="presencial" name="type" value="Presencial"> Presencial<br>
-                <input type="radio" id="whatsapp" name="type" value="Whatsapp"> Whatsapp<br>
-                <input type="radio" id="ligacaoTelefonica" name="type" value="Ligação telefonica"> Ligação
+                <label>2. Tipo de Atendimento:</label><br>
+                <input type="radio" id="idRdPresencial" name="type" value="Presencial"> Presencial<br>
+                <input type="radio" id="idRdWhatsapp" name="type" value="Whatsapp"> Whatsapp<br>
+                <input type="radio" id="idRdLigacaoTelefonica" name="type" value="Ligação telefonica"> Ligação
                 telefonica<br>
-                <input type="radio" id="email" name="type" value="E-mail"> E-mail<br>
-                <input type="radio" id="redesSociais" name="type" value="Redes Sociais"> Redes Sociais<br>
-                <input type="radio" id="Tteams" name="type" value="Teams"> Teams<br>
-                <input type="radio" id="outras" name="type" value="Outra"> Outra<br>
+                <input type="radio" id="idRdEmail" name="type" value="E-mail"> E-mail<br>
+                <input type="radio" id="idRdRedesSociais" name="type" value="Redes Sociais"> Redes Sociais<br>
+                <input type="radio" id="idRdTeams" name="type" value="Teams"> Teams<br>
+                <input type="radio" id="idRdOutraType" name="type" value="Outra"> Outra<br>
             </div>
             <br>
             <div class="input">
-                <label for="tipoAtendimento" class="letras">3. Quem estou atendendo:</label><br>
-                <input type="radio" id="empregador" name="typeClient" value="Empregador" required> Empregador<br>
-                <input type="radio" id="trabalhador" name="typeClient" value="Trabalhador" required> Trabalhador<br>
-                <input type="radio" id="outrasAgencias" name="typeClient" value="Outras Agências" required> Outras
+                <label>3. Quem estou atendendo:</label><br>
+                <input type="radio" id="idRdEmpregador" name="typeClient" value="Empregador" required> Empregador<br>
+                <input type="radio" id="idRdTrabalhador" name="typeClient" value="Trabalhador" required> Trabalhador<br>
+                <input type="radio" id="idRdOutrasAgencias" name="typeClient" value="Outras Agências" required> Outras
                 agências<br>
-                <input type="radio" id="ads" name="typeClient" value="ADS" required> ADS<br>
-                <input type="radio" id="setoresDaFGTAS" name="typeClient" value="Setores da FGTAS" required> Setores da
+                <input type="radio" id="idRdAds" name="typeClient" value="ADS" required> ADS<br>
+                <input type="radio" id="idRdSetoresDaFGTAS" name="typeClient" value="Setores da FGTAS" required> Setores da
                 FGTAS<br>
-                <input type="radio" id="infoMercado" name="typeClient" value="Mercado de trabalho" required> Interessado
+                <input type="radio" id="idRdInfoMercado" name="typeClient" value="Mercado de trabalho" required> Interessado
                 de informações sobre o Mercado de Trabalho<br>
-                <input type="radio" id="outrass" name="typeClient" value="Outra" required> Outra<br>
+                <input type="radio" id="idRdOutraClient" name="typeClient" value="Outra" required> Outra<br>
             </div>
             <br>
             <br>
             <div class="inputBox">
-                <label for="identificação" class="letras">4. Nome do empregador:</label><br>
-                <input type="text" name="nome" id="nomeUser" placeholder="Escreva aqui..." required>
+                <label>4. Nome do empregador:</label><br>
+                <input type="text" name="nome" id="idNomeCliente" placeholder="Escreva aqui..." required>
             </div>
             <br>
             <br>
             <div class="inputBox">
-                <label for="cnpj" class="letras">5. CNPJ do empregador:</label><br>
-                <input type="number" id="cnpjUser" name="CNPJ" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" maxlength="18"
+                <label>5. CNPJ do empregador:</label><br>
+                <input type="number" id="idCnpjCliente" name="CNPJ" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" maxlength="18"
                     placeholder="00.000.000/0000-00" required>
             </div>
             <br>
             <br>
             <div class="inputBox">
-                <label for="telfUser">Telefone:</label>
-                <input type="text" id="telfUser" name="telefone" maxlength="11" placeholder="(00) 000000000" required>
+                <label>Telefone:</label>
+                <input type="text" id="idTelefoneCliente" name="telefone" maxlength="11" placeholder="(00) 000000000" required>
             </div>
             <br>
             <br>
             <div class="input">
-                <label for="tipoAtendimento" class="letras">7. Tipo de atendimento:</label><br>
-                <input type="radio" id="carteiraTrabalho" name="typeClient" value="Carteira de Trabalho, SD, Vagas"
+                <label>7. Tipo de atendimento:</label><br>
+                <input type="radio" id="idRdCarteiraTrabalho" name="type2" value="Carteira de Trabalho, SD, Vagas"
                     required> Carteira de Trabalho, SD, Vagas<br>
-                <input type="radio" id="programaGaucho" name="typeClient" value="Programa Gaúcho do Artesanato"
+                <input type="radio" id="idRdProgramaGaucho" name="type2" value="Programa Gaúcho do Artesanato"
                     required> Programa Gaúcho do Artesanato<br>
-                <input type="radio" id="vidaCentroHu" name="typeClient" value="Vida Centro Humanístico" required> Vida
+                <input type="radio" id="idRdVidaCentroHu" name="type2" value="Vida Centro Humanístico" required> Vida
                 Centro Humanístico<br>
-                <input type="radio" id="empreendorismo" name="typeClient" value="Orientações sobre o empreendedorismo"
+                <input type="radio" id="idRdEmpreendorismo" name="type2" value="Orientações sobre o empreendedorismo"
                     required> Orientações sobre o empreendedorismo<br>
-                <input type="radio" id="cursosDeQualificaçao" name="typeClient"
+                <input type="radio" id="idRdCursosDeQualificaçao" name="type2"
                     value="Orientações sobre cursos de qualificação" required> Orientações sobre cursos de
                 qualificação<br>
-                <input type="radio" id="infoMercados" name="typeClient" value="Informações sobre o mercado de trabalho"
+                <input type="radio" id="idRdInfoMercados" name="type2" value="Informações sobre o mercado de trabalho"
                     required> Informações sobre o mercado de trabalho<br>
-                <input type="radio" id="outrasss" name="typeClient" value="Outra" required> Outra<br>
+                <input type="radio" id="idRdOutraType2" name="type2" value="Outra" required> Outra<br>
             </div>
             <br>
             <br>
             <div id="botao">
                 <a id="enviarLink">
-                    <button type="button" id="enviarBtn" class="botoes">Enviar</button>
+                    <button type="button" id="btnEnviar" class="botoes">Enviar</button>
                 </a>
             </div>
         </fieldset>
     </div>
 
     <script>
-        document.getElementById('telfUser').addEventListener('input', function (e) {
+        document.getElementById('idTelefoneCliente').addEventListener('input', function (e) {
             let value = e.target.value;
             e.target.value = value.replace(/\D/g, '');
         });
 
-        document.getElementById('enviarBtn').addEventListener('click', function (e) {
-            let telefone = document.getElementById('telfUser').value;
+        document.getElementById('btnEnviar').addEventListener('click', function (e) {
+            let telefone = document.getElementById('idTelefoneCliente').value;
             if (telefone.length < 11) {
                 alert('O número de telefone deve ter 11 dígitos.');
             } else {
