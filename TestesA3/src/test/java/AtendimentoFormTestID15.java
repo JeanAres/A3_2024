@@ -20,4 +20,7 @@ public class AtendimentoFormTestID15 extends BaseTest {
             throw new RuntimeException(e);
         }
     }
-}
+
+    public static AtendimentoFormTestID15 getInstance() {
+        return ;
+    }

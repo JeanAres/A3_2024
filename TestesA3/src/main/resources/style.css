@@ -109,16 +109,22 @@ div{
     align-items: center;
 }
 
-.botaozao {
+#botaozao {
     background-color: #59c225;
     color: #454345;
-    font-size: 1em; 
-    padding: 20px 40px; 
+    font-size: 1em;
+    padding: 20px 40px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
 }
 
-.botaozao:hover {
+#botaozao:hover {
     background-color: #45a017;
+}
+
+/* Estilos para evitar que links com botões tenham estilos padrão */
+#botaozao a {
+    text-decoration: none;
+    color: inherit;
 }

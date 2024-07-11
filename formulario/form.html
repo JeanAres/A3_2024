@@ -98,6 +98,11 @@
             e.target.value = value.replace(/\D/g, '');
         });
 
+       document.getElementById('idUsuario').addEventListener('input', function (e) {
+            let value = e.target.value;
+            e.target.value = value.replace(/[^a-zA-Z\s]/g, '');
+        });
+
         document.getElementById('enviarBtn').addEventListener('click', function (e) {
             let telefone = document.getElementById('telfUser').value;
             if (telefone.length < 11) {
@@ -106,6 +111,7 @@
                 document.getElementById('enviarLink').href = "Page2.html";
             }
         });
+
     </script>
 </body>
 </html>

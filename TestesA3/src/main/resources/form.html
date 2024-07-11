@@ -54,7 +54,7 @@
             <br>
             <div class="inputBox">
                 <label>5. CNPJ do empregador:</label><br>
-                <input type="number" id="idCnpjCliente" name="CNPJ" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" maxlength="18"
+                <input type="text" id="idCnpjCliente" name="CNPJ" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" maxlength="19"
                     placeholder="00.000.000/0000-00" required>
             </div>
             <br>
@@ -97,7 +97,14 @@
             let value = e.target.value;
             e.target.value = value.replace(/\D/g, '');
         });
-
+       document.getElementById('idCnpjCliente').addEventListener('input', function (e) {
+            let value = e.target.value;
+            e.target.value = value.replace(/[^\d.\-\/]/g, '');
+        });
+        document.getElementById('idAtendente').addEventListener('input', function (e) {
+            let value = e.target.value;
+            e.target.value = value.replace(/[^a-zA-Z\s]/g, '');
+        });
         document.getElementById('btnEnviar').addEventListener('click', function (e) {
             let telefone = document.getElementById('idTelefoneCliente').value;
             if (telefone.length < 11) {
