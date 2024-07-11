@@ -1,9 +1,11 @@
 package pages;
+import org.checkerframework.checker.nullness.qual.KeyFor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
+import java.security.Key;
 import java.util.List;
 
 public class AtendimentoFormPage extends BasePage{
@@ -23,16 +25,14 @@ public class AtendimentoFormPage extends BasePage{
     private WebElement strDadosEnviados;
     @FindBy(className = "video-container")
     private WebElement videoContainer;
-
-
+    @FindBy(id = "btnVoltar")
+    private WebElement btVoltar;
     @FindBy(name = "type")
     private List<WebElement> listaRdTipoAtendimento;
     @FindBy(name = "typeClient")
     private List<WebElement> listaRdQuemEstouAtendendo;
     @FindBy(name = "type2")
     private List<WebElement> listaRdTipoAtendimento2;
-
-
 
     /* Para consultar
     @FindBy(id = "venda")
@@ -71,6 +71,10 @@ public class AtendimentoFormPage extends BasePage{
 
     public AtendimentoFormPage clicarVideo(){
         videoContainer.click();
+        return this;
+    }
+    public AtendimentoFormPage clicarVoltar(){
+        btVoltar.click();
         return this;
     }
 
@@ -128,6 +132,7 @@ public class AtendimentoFormPage extends BasePage{
         btEnviar.click();
         return this;
     }
+
     /*public String clicarGoogle() {
         linkGoogle.click();
         String url = driver.getCurrentUrl();
