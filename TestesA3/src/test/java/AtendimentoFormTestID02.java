@@ -8,7 +8,7 @@ public class AtendimentoFormTestID02 extends BaseTest {
     public void validarId02() {
         AtendimentoFormPage page = new AtendimentoFormPage(getDriver());
         page.clicarBotaoIniciar();
-        String caracteres = "ABCEDFGHIJKLMNOPQRSTUVWXYZ".repeat(1);
+        String caracteres = "ABCDFGHIJKLMNOPQRSTUVWXYZ".repeat(1);
         page.preencherTxCnpjCliente(caracteres);  // Digitar letras no campo CNPJ do empregador
 
         String valorCNPJ = page.getTxCnpjCliente();

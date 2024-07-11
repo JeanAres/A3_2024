@@ -21,7 +21,8 @@ public class AtendimentoFormPage extends BasePage{
     private WebElement btEnviar;
     @FindBy(id = "idDadosEnviados")
     private WebElement strDadosEnviados;
-
+    @FindBy(className = "video-container")
+    private WebElement videoContainer;
 
 
     @FindBy(name = "type")
@@ -65,6 +66,11 @@ public class AtendimentoFormPage extends BasePage{
 
     public AtendimentoFormPage clicarBotaoIniciar(){
         btIniciar.click();
+        return this;
+    }
+
+    public AtendimentoFormPage clicarVideo(){
+        videoContainer.click();
         return this;
     }
 
